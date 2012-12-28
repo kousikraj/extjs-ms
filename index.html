@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<title>Message Driven Architecture Sample by Kousik Rajendran</title>
+	<!-- ALL THE STYLE SHEET REFERENCES -->
+    <link rel="stylesheet" type="text/css" href="http://extjs-public.googlecode.com/svn/tags/extjs-4.1.1a/release/resources/css/ext-all.css" />
+	<link rel="stylesheet" type="text/css" href="/works/extjs-ms/portal/portal.css" />
+    <!-- ALL SCRIPTS AND LIBRARIES GO HERE -->
+    <script type="text/javascript" src="http://extjs-public.googlecode.com/svn/tags/extjs-4.1.1a/release/ext-all.js"></script>
+	<!-- shared example code -->
+    <script type="text/javascript" src="http://extjs-public.googlecode.com/svn/tags/extjs-4.1.1a/release/examples/shared/examples.js"></script>
+	<script type="text/javascript" src="/works/extjs-ms/portal/portal.js"></script>
+	<script type="text/javascript" src="/works/extjs-ms/ux/messaging/Constants.js"></script>
+    <script type="text/javascript">
+		Ext.Loader.setConfig({enabled:true, disableCaching: true});
+		Ext.Loader.setPath({
+			'Ext.app'	: '/works/extjs-ms/portal/classes',
+			'Ext.ux'	: '/works/extjs-ms/ux'
+		});
+        Ext.require([
+            'Ext.layout.container.*',
+            'Ext.resizer.Splitter',
+            'Ext.fx.target.Element',
+            'Ext.fx.target.Component',
+            'Ext.window.Window',
+            'Ext.app.Portlet',
+            'Ext.app.PortalColumn',
+            'Ext.app.PortalPanel',
+            'Ext.app.Portlet',
+            'Ext.app.PortalDropZone',
+            'Ext.app.GridPortlet',
+            'Ext.app.ChartPortlet',
+
+
+			'Ext.ux.messaging.Constants',
+			'Ext.ux.messaging.INotificationLsnr',
+			'Ext.ux.messaging.INotifier',
+			'Ext.ux.messaging.IPublishedMessage',
+			'Ext.ux.messaging.NotifierMap',
+			'Ext.ux.messaging.NotificationManager',
+			'Ext.ux.messaging.AbstractMessenger'
+        ]);
+
+        Ext.onReady(function(){
+            Ext.create('Ext.app.Portal');
+        });
+    </script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-24448140-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+</html>
